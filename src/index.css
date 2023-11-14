@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+
+*{
+  margin: 0;
+  box-sizing: border-box
+}
+
+.text {
+  font-family: 'Bungee Outline', sans-serif;
+}
+
+.background {
+  transform: rotate(90deg); transform-origin: 0 0; opacity: 0.30; background: #82F7FF; box-shadow: 120px 120px 120px; filter: blur(120px)
+}
+
+.background2 {transform: rotate(90deg); transform-origin: 0 0; opacity: 0.30; background: #82FFD2; box-shadow: 120px 120px 120px; filter: blur(120px)}
+
+.background3 {background: #F0FAFD}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -20,7 +20,7 @@ const HomeHero = () => {
       backgroundImage: `url(${heroUrl}`,
       backgroundSize: "cover",
     }}>
-    <div className="self-center w-[100%] pt-20 md:pt-32 px-4 md:px-28 h-full">
+    <div className="self-center w-[100%] pt-20 md:pt-32 px-4 md:px-14 lg:px-28 h-full">
       <p className="mb-5">
         <span className="md:text-[25px] block md:inline text-center text-[30px] md:text-left font-semibold font-['Bungee Outline'] capitalize text">
           Get your game on at{" "}
@@ -35,7 +35,7 @@ const HomeHero = () => {
         from, you can play to your heart's desire
       </p>
       <div className="relative">
-      <div className="flex w-[240px] md:w-full items-center relative mb-5 md:mb-10 ">
+      <div className="flex w-[85%] md:w-full items-center relative mb-5 md:mb-10 ">
         <IoLocationSharp className="absolute left-1 text-yellow-500" />
         <input
           type="text"
@@ -47,7 +47,7 @@ const HomeHero = () => {
           <span className='text-[12px] hidden md:inline'>Search</span> <MdArrowForwardIos className="" />{" "}
         </button>
       </div>
-      <img src={play} alt="" className=" absolute top-0 right-1 md:hidden hover:animate-ping cursor-pointer w-10"/>
+      <img src={play} alt="" className=" absolute top-1 right-2 md:hidden hover:animate-ping cursor-pointer w-7"/>
       </div>
 
       <p className="text-neutral-400 text-center md:text-left md:mb-4 mb-5 text-sm font-normal font-['Lexend']">

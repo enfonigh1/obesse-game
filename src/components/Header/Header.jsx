@@ -20,7 +20,7 @@ const Header = () => {
   window.addEventListener('scroll',headerbackground)
 
   return (
-    <div className={headerbg ? 'flex items-center w-full justify-between py-4 fixed left-0 px-4 md:px-8 lg:px-24 z-50 header-bg':'flex items-center w-full justify-between py-4 fixed left-0 px-4 md:px-24 z-50'}>
+    <div className={headerbg ? 'flex items-center w-full justify-between py-4 fixed left-0 px-4 md:px-14 lg:px-28 z-50 header-bg':'flex items-center w-full justify-between py-4 fixed left-0 px-4 md:px-14 lg:px-28 z-50'}>
       <img src={logo} alt="logo" className='w-16' />
       <AiOutlineBars className='text-[#10B981] block lg:hidden'/>
         <ul className='list-none lg:flex hidden'>       

@@ -9,7 +9,7 @@ const Footer = () => {
 
   const footerUrl = footerbg
   return (
-    <div className='grid md:grid-cols-2 px-4 md:px-28' style={{
+    <div className='grid md:grid-cols-2 px-4 md:px-14 lg:px-28' style={{
       backgroundImage: `url(${footerUrl}`,
       backgroundSize: "cover",
     }}>

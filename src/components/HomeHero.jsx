@@ -25,7 +25,7 @@ const HomeHero = () => {
         <span className="md:text-[25px] block md:inline text-center text-[30px] md:text-left font-semibold font-['Bungee Outline'] capitalize text">
           Get your game on at{" "}
         </span>
-        <span className="text-[#1B1C57] block md:inline text-center md:text-xl text-3xl font-[900] font-['Lexend'] capitalize">
+        <span className="text-[#1B1C57] block text-center md:text-xl md:text-left text-3xl font-[900] font-['Lexend'] capitalize">
           OBESE GAMING LOUNGE
         </span>
       </p>

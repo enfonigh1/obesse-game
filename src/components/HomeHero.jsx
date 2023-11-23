@@ -14,14 +14,16 @@ import herobg from '../assets/herobg.png'
 const HomeHero = () => {
 
   const heroUrl = herobg
+ 
 
   return (
-    <div className="w-full grid grid-cols-1 place-content-center md:place-content-start lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
+    <div className="w-full grid grid-cols-1 relative place-content-center md:place-content-start lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
       backgroundImage: `url(${heroUrl}`,
       backgroundSize: "cover",
     }}>
     <div className="self-center w-[100%] pt-20 md:pt-32 px-4 md:px-14 lg:px-28 h-full">
-      <p className="mb-5">
+      <p className="mb-5
+      m-0.5">
         <span className="md:text-[25px] block md:inline text-center text-[30px] md:text-left font-semibold font-['Bungee Outline'] capitalize text">
           Get your game on at{" "}
         </span>
@@ -78,7 +80,10 @@ const HomeHero = () => {
       {/* <AiFillPlayCircle className="absolute top-[45%]  left-[50%] translate-[-50%, -50%] text-white/50 text-6xl"/> */}
       <img src={play} alt="" className="absolute  top-[40%]  left-[45%] hover:animate-ping cursor-pointer w-28 translate-['-50%, -50%']"/>
     </div>
-  </div>
+    
+  
+    </div>
+  
   )
 }
 

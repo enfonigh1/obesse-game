@@ -71,8 +71,8 @@ const AvailableGames = () => {
         spaceBetween={5}
         slidesPerView={3}
         loop={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,

@@ -55,7 +55,7 @@ const HomeHero = () => {
       <p className="text-neutral-400 text-center md:text-left md:mb-4 mb-5 text-sm font-normal font-['Lexend']">
         Available Game
       </p>
-      <marguee>
+      <marquee>
         <div className="flex items-center justify-between">
         <div className="">
         <img src={FIFA23} alt="Available-games-image" className="w-8 md:w-12" />
@@ -73,7 +73,7 @@ const HomeHero = () => {
         <img src={NBA2k23} alt="Available-games-image" className="w-8 md:w-12"  />
         </div>
         </div>
-      </marguee>
+      </marquee>
     </div>
     <div className="lg:h-full md:mt-10 lg:mt-auto hidden md:block md:mx-auto md:h-[80%]   md:w-[90%] lg:w-full relative top-0 bottom-0">
       <img src={herosectionimage} className="w-full h-full " alt="" />

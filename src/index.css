@@ -21,15 +21,78 @@
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-    display: none;
+   width: 5px;
+    visibility: hidden;
   }
 
+
+ 
+  .no-scrollbar::-webkit-scrollbar-track {
+    /* background-color: #82F7FF; */
+
+    transition: 300ms ease;
+    visibility: hidden;
+   }
+
+   /* p.no-scrollbar {
+    transition:  all .5s ease-in;
+    visibility: hidden;
+   }
+
+   p.no-scrollbar:hover p {
+    visibility: visible;
+   } */
+
+   .no-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left top, rgba(130, 187, 255, 0.2), rgba(0, 211, 255, 0.2), rgba(0, 230, 228, 0.2), rgba(0, 239, 145, 0.2), rgba(168, 235, 18, 0.2));
+    background-color: rgba(0, 0, 0);
+    visibility: hidden;
+    border-radius: 10px;
+    ;
+  
+        
+   }
+
+   .mySwiper p.texte:hover::-webkit-scrollbar-thumb,.mySwiper p.texte:hover::-webkit-scrollbar-track {    
+    visibility: visible;
+   }
+
+   
+
+
+   .mySwiper  SwiperSlide {
+    visibility: visible;
+   }
+
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: 10px; /* IE and Edge */
+    scrollbar-width: 10px; /* Firefox */
+   
   }
+
+}
+
+.modal {
+  position: fixed;
+  top:50%;
+  left:50%;
+  /* bottom: 0%;
+  right: 0%; */
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  outline: none;
+  backdrop-filter: blur(2px);
+  background-image: linear-gradient(to left top, rgba(130, 187, 255, 0.2), rgba(0, 211, 255, 0.2), rgba(0, 230, 228, 0.2), rgba(0, 239, 145, 0.2), rgba(168, 235, 18, 0.2));
+  background-color: rgba(0, 0, 0,.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  z-index: 999;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

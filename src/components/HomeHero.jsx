@@ -17,7 +17,7 @@ const HomeHero = () => {
  
 
   return (
-    <div className="w-full grid grid-cols-1 relative place-content-center md:place-content-start lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
+    <div className="w-full grid grid-cols-1 relative place-content-center lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
       backgroundImage: `url(${heroUrl}`,
       backgroundSize: "cover",
     }}>
@@ -37,7 +37,7 @@ const HomeHero = () => {
         from, you can play to your heart's desire
       </p>
       <div className="relative">
-      <div className="flex w-[85%] md:w-full items-center relative mb-5 md:mb-10 ">
+      <div className="flex w-[85%] md:w-full items-center relative mb-5 md:mb-2 ">
         <IoLocationSharp className="absolute left-1 text-yellow-500" />
         <input
           type="text"
@@ -52,7 +52,7 @@ const HomeHero = () => {
       <img src={play} alt="" className=" absolute top-1 right-2 md:hidden hover:animate-ping cursor-pointer w-7"/>
       </div>
 
-      <p className="text-neutral-400 text-center md:text-left md:mb-4 mb-5 text-sm font-normal font-['Lexend']">
+      <p className="text-neutral-400 text-center md:text-left  mb-5 md:mb-0 text-sm font-normal font-['Lexend']">
         Available Game
       </p>
       <marquee>
@@ -75,10 +75,10 @@ const HomeHero = () => {
         </div>
       </marquee>
     </div>
-    <div className="lg:h-full md:mt-10 lg:mt-auto hidden md:block md:mx-auto md:h-[80%]   md:w-[90%] lg:w-full relative top-0 bottom-0">
+    <div className="lg:h-full md:mt-2 lg:mt-auto hidden md:block md:mx-auto md:w-full md:h-80 lg:w-full relative top-0 bottom-0">
       <img src={herosectionimage} className="w-full h-full " alt="" />
       {/* <AiFillPlayCircle className="absolute top-[45%]  left-[50%] translate-[-50%, -50%] text-white/50 text-6xl"/> */}
-      <img src={play} alt="" className="absolute  top-[40%]  left-[45%] hover:animate-ping cursor-pointer w-28 translate-['-50%, -50%']"/>
+      <img src={play} alt="" className="absolute  top-[40%]  left-[50%] hover:animate-ping cursor-pointer w-20 translate-['-50%, -50%']"/>
     </div>
     
   

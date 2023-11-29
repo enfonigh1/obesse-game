@@ -6,16 +6,17 @@ import OurReview from '../components/OurReview'
 import EventsPromosAndUpdates from "../components/EventsPromosAndUpdates";
 import Suscribe from '../components/Suscribe';
 import Footer from '../components/Footer' 
-import Header from "../components/Header/Header";
-import Main from "./Main";
 
-const Home = () => (
-  
-   <div className="">
-      <Header />
-      <Main />
-    </div>
-  
+const Main = () => (
+  <>
+  <HomeHero />
+  <AvailableGames />
+  <OurGames/>
+  <OurReview />
+  <EventsPromosAndUpdates />
+  <Suscribe />
+  <Footer />
+  </>
 );
 
-export default Home;
+export default Main;

@@ -30,7 +30,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Pro Evolution Soccer 2023 Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -41,17 +41,18 @@ const EventsPromosAndUpdates = () => {
       subheading:"NBA2K23 Basketball Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
       id: 3,
       img: ThirdEvent,
+      title: "Announcement",
       heading: "Get Ready for the upcoming gaming competition",
       subheading:"Need for Speed Unbound Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -62,7 +63,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Mortal Kombat 11 Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -73,7 +74,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Superman Unrestricted Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -84,7 +85,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Spiderman 2 2023 Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -95,7 +96,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Grand Theft Auto V Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
     {
@@ -106,7 +107,7 @@ const EventsPromosAndUpdates = () => {
       subheading:"Fifa 2023 Gaming Event",
       text:
         "Console gaming has become a widespread form of entertainment, offering immersive experiences with stunning graphics and realistic gameplay. Players can enjoy a diverse range of genres, from action-packed adventures to strategic simulations, all from the comfort of their living rooms.",
-      date:23-11-23,
+      date:"23-11-23",
         time: "  4 min read | READ",
     },
   ];
@@ -224,12 +225,12 @@ const EventsPromosAndUpdates = () => {
           <div className=" absolute top-2 right-3 cursor-pointer text-[#10B981]" onClick={toggle}>
             <IoClose size={30} />
           </div>
-          <div className=" bg-white fixed inset-[10%] rounded-md p-4 bg-opacity-60 text-white">
-            <ModalHeader toggle={toggle} className="font-bold text-center mt-4 font-['Lexend'] text-[20px] md:text-[25px] lg:text-[30px]">{zoomedContent?.title}</ModalHeader>
+          <div className=" bg-white fixed inset-[8%] rounded-md p-4 bg-opacity-60 text-white flex flex-col ">
+            <ModalHeader toggle={toggle} className="font-bold text-center mt-0 md:mt-4 font-['Lexend'] text-12px] md:text-[25px] lg:text-[30px]">{zoomedContent?.title}</ModalHeader>
             <ModalBody className="text-white">
-              <img className="w-40 h-40 mb-4 block mx-auto rounded-full bg-center" src={zoomedContent?.img} alt="" />
-              <p className="text-center font-semibold text-[20px] font-['Lexend']">{zoomedContent?.subheading}</p>
-              <p className="text-[18px] leading-7 tracking-wide font-medium font-['Lexend'] mt-5 overflow-auto">{zoomedContent?.text}</p>
+              <img className="w-20 h-20 lg:w-40 lg:h-40 mb-4 block mx-auto rounded-full bg-center" src={zoomedContent?.img} alt="" />
+              <p className="font-semibold text-center mt-0 md:mt-4 font-['Lexend'] text-12px] md:text-[25px] lg:text-[30px]">{zoomedContent?.subheading}</p>
+              <p className="text-[12px]  md:text-[18px] leading-7 tracking-wide font-medium font-['Lexend'] mt-5 text-ellipsis overflow-y-auto h-[28vh] md:h-auto">{zoomedContent?.text}</p>
             </ModalBody>
             <ModalFooter className="mt-5">
               {/* <Button color="secondary" onClick={toggle}>

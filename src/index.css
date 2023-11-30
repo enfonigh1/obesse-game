@@ -46,7 +46,7 @@
    .no-scrollbar::-webkit-scrollbar-thumb {
     background: linear-gradient(to left top, rgba(130, 187, 255, 0.2), rgba(0, 211, 255, 0.2), rgba(0, 230, 228, 0.2), rgba(0, 239, 145, 0.2), rgba(168, 235, 18, 0.2));
     background-color: rgba(0, 0, 0);
-    visibility: hidden;
+    /* visibility: hidden; */
     border-radius: 10px;
     ;
   
@@ -61,6 +61,7 @@
 
 
    .mySwiper  SwiperSlide {
+    transition: visibility 300ms ease;
     visibility: visible;
    }
 
@@ -70,6 +71,14 @@
    
   }
 
+}
+
+p.major .no-scrollbar {
+  visibility: hidden;
+}
+
+p.major:hover .no-scrollbar {
+  visibility: visible;
 }
 
 .modal {
@@ -82,9 +91,11 @@
   height: 100%;
   width: 100%;
   outline: none;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(0px);
   background-image: linear-gradient(to left top, rgba(130, 187, 255, 0.2), rgba(0, 211, 255, 0.2), rgba(0, 230, 228, 0.2), rgba(0, 239, 145, 0.2), rgba(168, 235, 18, 0.2));
   background-color: rgba(0, 0, 0,.6);
+  /* background-image: linear-gradient(to right, #10b981, #22cdcc, #8adbf6, #d6e9ff, #ffffff);
+  background-color: rgba(0, 0, 0,.6); */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -66,7 +66,7 @@ const AvailableGames = () => {
 
       
 
-      <div className="my-4">
+      <div className="my-4 2xl:block 2xl:mx-auto">
       <Swiper
         spaceBetween={5}
         slidesPerView={3}
@@ -81,61 +81,67 @@ const AvailableGames = () => {
           clickable: true,
         }}
         navigation={true}
+        breakpoints={{
+            2560:{
+              slidesPerView: 3,
+              spaceBetween: 10,
+            }
+        }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide >
             <img src={football} alt="GIF" width="340" height="552" className="rounded-xl relative"/>
             <div className="">
-              <p className="text-slate-900 text-[12px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Roselands House</p>
-              <small className="text-[#0E1735] text-center md:text-left block text-sm  font-sm font-['Lexend'] ">$35,000</small>
+              <p className="text-slate-900 text-[12px] 2xl:text-[16px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">EA Sports Games</p>
+              <small className="text-[#0E1735] text-center md:text-left block text-sm 2xl:text-md font-sm font-['Lexend'] ">GH₵35,000</small>
               <div className="flex flex-col md:flex-row items-center mt-2">
-                <RxAvatar className="mr-2 text-xl" />
+                <p className="mr-2 text-xl 2xl:text-2xl" >🏆</p>
               <div>
-              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] font-medium font-['Lexend'] ">Bestplayer</p>
-              <small className="text-[#888B97] text-center md:text-left block text-[.8rem] md:text-[.6rem]  font-normal font-['Lexend'] font-md">Team play</small>
+              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] 2xl:text-[1rem] font-medium font-['Lexend'] ">Bestplayer</p>
+              <small className="text-[#888B97] text-center md:text-left block text-[.8rem] md:text-[.6rem] 2xl:text-[.8rem]  font-normal font-['Lexend'] font-md">89th min</small>
               </div>
               </div>
             </div>
         </SwiperSlide>
           <SwiperSlide>
-            <img src={snooker} alt="GIF" width="340" height="552" className="rounded-xl"/>
+            <img src={snooker} alt="GIF" width="" height="" className="rounded-xl"/>
             <div className="">
-              <p className="text-slate-900 text-[12px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Roselands House</p>
-              <small className="text-[#0E1735] text-center md:text-left block text-sm  font-sm font-['Lexend'] ">$35,000</small>
+              <p className="text-slate-900 text-[12px] 2xl:text-[16px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Board Games</p>
+              <small className="text-[#0E1735] text-center md:text-left block text-sm 2xl:text-md font-sm font-['Lexend'] ">GH₵35,000</small>
               <div className="flex items-center flex-col md:flex-row  mt-2">
-                <RxAvatar className="mr-2 text-xl" />
+                <p className="mr-2 text-xl 2xl:text-2xl" >🏆</p>
               <div>
-              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] font-medium font-['Lexend'] ">Bestplayer</p>
-              <small className="text-[#888B97] text-center md:text-left block text-[.8rem] md:text-[.6rem]  font-normal font-['Lexend'] font-md">Team play</small>
+              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] 2xl:text-[1rem] font-medium font-['Lexend'] ">Bestplayer</p>
+              <small className="text-[#888B97] text-center md:text-left block text-[.8rem]  md:text-[.6rem] 2xl:text-[.8rem]  font-normal font-['Lexend'] font-md">Win</small>
               </div>
               </div>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={basketball} alt="GIF" width="340" height="552" className="rounded-xl"/>
+            <img src={basketball} alt="GIF" width="" height="" className="rounded-xl"/>
             <div className="">
-              <p className="text-slate-900 text-[12px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Roselands House</p>
-              <small className="text-[#0E1735] text-center md:text-left block text-sm  font-sm font-['Lexend'] ">$35,000</small>
+              <p className="text-slate-900 text-[12px] 2xl:text-[16px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Basketball</p>
+              <small className="text-[#0E1735] text-center md:text-left block text-sm 2xl:text-md font-sm font-['Lexend'] ">GH₵35,000</small>
               <div className="flex flex-col md:flex-row items-center mt-2">
-                <RxAvatar className="mr-2 text-xl" />
+                <p className="mr-2 text-xl 2xl:text-2xl" >🏆</p>
               <div>
-              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] font-medium font-['Lexend'] ">Bestplayer</p>
-              <small className="text-[#888B97] text-center md:text-left block text-[.8rem] md:text-[.6rem]  font-normal font-['Lexend'] font-md">Team play</small>
+              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] 2xl:text-[1rem] font-medium font-['Lexend'] ">Bestplayer</p>
+              <small className="text-[#888B97] text-center md:text-left block text-[.8rem]  md:text-[.6rem] 2xl:text-[.8rem]  font-normal font-['Lexend'] font-md">Win</small>
               </div>
               </div>
             </div>
         </SwiperSlide>
           <SwiperSlide>
-            <img src={snooker} alt="GIF" width="340" height="452" className="rounded-xl"/>
+            <img src={snooker} alt="GIF" width="" height="" className="rounded-xl"/>
             <div className="">
-              <p className="text-slate-900 text-[12px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Roselands House</p>
-              <small className="text-[#0E1735] text-center md:text-left block text-sm  font-sm font-['Lexend'] ">$35,000</small>
+              <p className="text-slate-900 text-[12px] 2xl:text-[16px] text-center md:text-left md:text-sm font-medium font-['Lexend'] ">Board Games</p>
+              <small className="text-[#0E1735] text-center md:text-left block text-sm 2xl:text-md font-sm font-['Lexend'] ">GH₵35,000</small>
               <div className="flex flex-col md:flex-row  items-center mt-2">
-                <RxAvatar className="mr-2 text-xl" />
+                <p className="mr-2 text-xl 2xl:text-2xl" >🏆</p>
               <div>
-              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] font-medium font-['Lexend'] ">Bestplayer</p>
-              <small className="text-[#888B97] text-center md:text-left block text-[.8rem] md:text-[.6rem]  font-normal font-['Lexend'] font-md">Team play</small>
+              <p className="text-[#0E1735] mt-2 md:mt-0 leading-normal text-[.8rem] 2xl:text-[1rem] font-medium font-['Lexend'] ">Bestplayer</p>
+              <small className="text-[#888B97] text-center md:text-left block text-[.8rem]  md:text-[.6rem] 2xl:text-[.8rem]  font-normal font-['Lexend'] font-md">Lose</small>
               </div>
               </div>
             </div>

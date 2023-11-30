@@ -26,20 +26,20 @@ const Footer = () => {
         <div className="">
         <h2 className="text-[#0E1735] mt-10 text-[12px] font-semibold font-['Lexend'] capitalize cursor-pointer">Property</h2>
         <ul className='mt-2'>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">House</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Apartment</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Villa</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">House</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Apartment</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Villa</li>
         </ul>
         
         </div>
 
-        <div className="">
+        <div className="">  
         <h2 className="text-[#0E1735] mt-10 text-[12px] font-semibold font-['Lexend'] cursor-pointer capitalize">Article</h2>
         <ul className='mt-2'>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">New Article</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Popular Article</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Most Read</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Tips & Tricks</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">New Article</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Popular Article</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Most Read</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Tips & Tricks</li>
         </ul>
         
         </div>
@@ -47,9 +47,9 @@ const Footer = () => {
         <div className="">
         <h2 className="text-[#0E1735] mt-10 text-[12px] font-semibold font-['Lexend'] cursor-pointer capitalize">contact</h2>
         <ul className='mt-2'>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">Top high,near POKGAS Furniture Kumasi</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal font-['Lexend'] capitalize">(671) 555-0110</li>
-        <li className="text-[#888B97] block my-2 cursor-pointer text-[10px] font-normal overflow-hidden text-ellipsis font-['Lexend'] capitalize">Obesegaminglouge@gmail.com</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">Top high,near POKGAS Furniture Kumasi</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal font-['Lexend'] capitalize">+233 20-303-8734</li>
+        <li className="text-[#888B97] block my-2 cursor-pointer 2xl:text-[14px] font-normal overflow-hidden text-ellipsis font-['Lexend'] capitalize">Obesegaminglouge@gmail.com</li>
         </ul>
         
         </div>
@@ -58,5 +58,7 @@ const Footer = () => {
     </div>
   )
 }
+
+
 
 export default Footer

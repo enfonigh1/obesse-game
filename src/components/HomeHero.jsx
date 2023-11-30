@@ -4,6 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 import {AiFillPlayCircle} from 'react-icons/ai';
 import FIFA23 from "../assets/FIFA23.svg";
+import { FaGamepad } from "react-icons/fa";
 import BlackAndWhiteBusinessLogo101 from '../assets/BlackAndWhiteBusinessLogo101.svg';
 import BlackAndWhiteBusinessLogo81 from '../assets/BlackAndWhiteBusinessLogo81.svg';
 import BlackAndWhiteBusinessLogo51 from '../assets/BlackAndWhiteBusinessLogo51.svg';
@@ -17,14 +18,14 @@ const HomeHero = () => {
  
 
   return (
-    <div className="w-full grid grid-cols-1 relative place-content-center lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
+    <div className="w-full grid grid-cols-1 relative place-content-center lg:place-content-start  lg:grid-cols-2 h-screen md:mb-20 mb-10 " style={{
       backgroundImage: `url(${heroUrl}`,
       backgroundSize: "cover",
     }}>
     <div className="self-center w-[100%] pt-20 md:pt-32 px-4 md:px-14 lg:px-28 h-full">
       <p className="mb-5
       m-0.5">
-        <span className="md:text-[25px] block md:inline text-center text-[30px] md:text-left font-semibold font-['Bungee Outline'] capitalize text">
+        <span className="md:text-[25px] 2xl:text-[30px] block md:inline text-center text-[30px] md:text-left font-semibold font-['Bungee Outline'] capitalize text">
           Get your game on at{" "}
         </span>
         <span className="text-[#1B1C57] block text-center md:text-xl md:text-left text-3xl font-[900] font-['Lexend'] capitalize">
@@ -32,17 +33,17 @@ const HomeHero = () => {
         </span>
       </p>
       <hr className='mb-5 mx-auto md:mx-0 w-[60%] bg-amber-500 border-0 h-1 rounded-md'/>
-      <p className=" text-[#626687] text-[12px] font-normal font-['Lexend'] mb-4 ">
+      <p className=" text-[#626687] text-[12px] 2xl:text-[16px] font-normal font-['Lexend'] mb-4 ">
         The ultimate gaming experience. With a wide variety of games to choose
         from, you can play to your heart's desire
       </p>
       <div className="relative">
       <div className="flex w-[85%] md:w-full items-center relative mb-5 md:mb-2 ">
-        <IoLocationSharp className="absolute left-1 text-yellow-500" />
+        <FaGamepad  className="absolute left-4 text-yellow-500" />
         <input
           type="text"
-          placeholder="Search for the location you want"
-          className="pl-6 py-1.5 outline-none rounded-3xl border text-neutral-400 text-sm  font-normal font-['Lexend'] leading-snug placeholder::placeholder-ellipsis-x-hidden placeholder::placeholder-ellipsis-text flex-1 placeholder:mr-10 md:placeholder:mr-10"
+          placeholder="Search For Game"
+          className="pl-10 py-1.5 outline-none rounded-3xl border text-neutral-400 text-sm  font-normal font-['Lexend'] leading-snug placeholder::placeholder-ellipsis-x-hidden placeholder::placeholder-ellipsis-text flex-1 placeholder:mr-10 md:placeholder:mr-10"
         />
         
         <button className="bg-[#10B981] flex items-center py-1 px-2 rounded-2xl absolute -right-1 text-white font-['Lexend'] text-md mr-2">
@@ -52,7 +53,7 @@ const HomeHero = () => {
       <img src={play} alt="" className=" absolute top-1 right-2 md:hidden hover:animate-ping cursor-pointer w-7"/>
       </div>
 
-      <p className="text-neutral-400 text-center md:text-left  mb-5 md:mb-0 text-sm font-normal font-['Lexend']">
+      <p className="text-neutral-400 text-center md:text-left mb-5 md:mb-0 text-sm font-normal font-['Lexend'] 2xl:text-md">
         Available Game
       </p>
       <marquee>
@@ -75,7 +76,7 @@ const HomeHero = () => {
         </div>
       </marquee>
     </div>
-    <div className="lg:h-full md:mt-2 lg:mt-auto hidden md:block md:mx-auto md:w-full md:h-80 lg:w-full relative top-0 bottom-0">
+    <div className="lg:h-full md:mt-2 lg:mt-auto hidden md:block md:mx-auto md:w-full md:h-80 lg:w-full relative top-0 bottom-0 ">
       <img src={herosectionimage} className="w-full h-full " alt="" />
       {/* <AiFillPlayCircle className="absolute top-[45%]  left-[50%] translate-[-50%, -50%] text-white/50 text-6xl"/> */}
       <img src={play} alt="" className="absolute  top-[40%]  left-[50%] hover:animate-ping cursor-pointer w-20 translate-['-50%, -50%']"/>
